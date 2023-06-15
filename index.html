@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css">
+    <title>Pizza</title>
+  </head>
+  <body>
+    <h1 class="main__heading">Pizza</h1>
+
+    <div class="wrapper__box">
+      <div class="orders">
+        <div class="selection_part">
+          <h3 class="title">Noni qanday bo'lsin?</h3>
+          <select class="select_bread">
+            <option value="" disabled selected></option>
+            <option value="Yupqa">Yupqa</option>
+            <option value="Qalin">Qalin</option>
+          </select>
+        </div>
+
+        <div class="size">
+          <h3 class="title">Kattaligi</h3>
+
+          <div class="radius_label_box">
+            <label class="radius_label">
+              25 sm
+              <input class="input" name="sizeOFPizza" type="radio" value="25 sm" name="size" />
+            </label>
+            <label class="radius_label">
+              30 sm
+              <input class="input" name="sizeOFPizza" type="radio" value="30 sm" name="size" />
+            </label>
+            <label class="radius_label">
+              35 sm
+              <input class="input" name="sizeOFPizza" type="radio" value="35 sm" name="size" />
+            </label>
+          </div>
+        </div>
+
+        <div class="top-components">
+          <h3 class="title">Ustiga nima solaylik?</h3>
+
+          <div class="checkboxes_box">
+            <div class="checkboxes_inner">
+              <label class="label_checkbox">
+                <input
+                  value="Pomidor"
+                  name="for_top"
+                  type="checkbox"
+                  class="input_checkbox"
+                />
+                Pomidor
+              </label>
+              <label class="label_checkbox">
+                <input
+                  value="Kurka go'shti"
+                  name="for_top"
+                  type="checkbox"
+                  class="input_checkbox"
+                />
+                Kurka go'shti
+              </label>
+              <label class="label_checkbox">
+                <input
+                  value="Zaytun"
+                  name="for_top"
+                  type="checkbox"
+                  class="input_checkbox"
+                />
+                Zaytun
+              </label>
+            </div>
+            <div class="checkboxes_inner">
+              <label class="label_checkbox">
+                <input
+                  value="Tuzlangan bodring"
+                  name="for_top"
+                  type="checkbox"
+                  class="input_checkbox"
+                />
+                Tuzlangan bodring
+              </label>
+              <label class="label_checkbox">
+                <input
+                  value="Qo'ziqorin"
+                  name="for_top"
+                  type="checkbox"
+                  class="input_checkbox"
+                />
+                Qo'ziqorin
+              </label>
+              <label class="label_checkbox">
+                <input
+                  value="Qazi"
+                  name="for_top"
+                  type="checkbox"
+                  class="input_checkbox"
+                />
+                Qazi
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="components">
+          <h3 class="title">Qo'shimchalar</h3>
+
+          <div class="components_choice">
+            <label class="label_checkbox">
+              <input
+                value="achchiq"
+                name="components"
+                type="checkbox"
+                class="input_checkbox"
+              />
+              Achchiq
+            </label>
+            <label class="label_checkbox">
+              <input
+                value="sosiskali"
+                name="components"
+                type="checkbox"
+                class="input_checkbox"
+              />
+              Sosiskali
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="results">
+        <div class="bread_result answer_box">
+          <h3 class="answer_title title">Non:</h3>
+          <p class="bread answer"></p>
+        </div>
+
+        <div class="size_result answer_box">
+          <h3 class="answer_title title">Kattaligi:</h3>
+          <p class="size_answer answer"></p>
+        </div>
+
+        <div class="forTop_result-box">
+          <h3 class="answer_title title">Ustida:</h3>
+          <div class="forTop_result"></div>
+        </div>
+
+        <div class="components_result-box">
+          <h3 class="answer_title title">Qo'shimcha:</h3>
+   <div class="components_result"></div>
+        </div>
+
+        <button class="submit_btn">Buyurtma berish</button>
+    </div>
+    </div>
+
+    <div class="modal none">
+     <div class="modal_box">
+      <div class="heading_box">
+        <h1 class="modal_heading"></h1>
+      </div>
+      <div class="modal_result_box">
+        <p class="modal_result">Buyurtmangiz qabul qilindi! </p>
+      </div>
+     </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
